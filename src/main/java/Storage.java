@@ -193,7 +193,7 @@ public class Storage
             final boolean itemWasStored = inv.addItems(stack);
             storageLog.add(
                 itemWasStored
-                ? String.format(" Stored %s%n", stack)
+                ? String.format(" Stored    %s%n", stack)
                 : String.format(" Discarded %s%n", stack)
             );
         }
@@ -208,7 +208,7 @@ public class Storage
         //----------------------------------------------------------------------
         System.out.println("Processing Log:");
         for (String entry : storageLog) {
-            System.out.println(entry);
+            System.out.print(entry);
         }
 
         return storage;
