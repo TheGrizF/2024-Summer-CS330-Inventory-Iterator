@@ -70,7 +70,7 @@ tasks.withType(Test) {
 }
 
 test {
-    finalizedBy jacocoTestReport
+    // finalizedBy jacocoTestReport
 }
 
 //------------------------------------------------------------------------------
